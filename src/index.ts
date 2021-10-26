@@ -1,7 +1,14 @@
-console.log('hi there')
+class Sorter {
+  constructor(public collection: number[]) {}
+  // above is a shorthand equivalent to below code:
+  // collection: number[]
+  // constructor(collection: number[]) {
+  //   this.collection = collection
+  // }
 
-const logSomething = () => {
-  console.log('something')
+  sort(): void {}
 }
 
-logSomething()
+const sorter = new Sorter([10, 3, -5, 0])
+sorter.sort()
+console.log(sorter.collection)
